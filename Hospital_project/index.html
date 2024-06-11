@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nearby Hospitals</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <h1>Find Nearby Hospitals</h1>
+    <div class="author">Project by Deepak Kumar</div>
+  </div>
+  <div class="search-container">
+    <input id="location" type="text" placeholder="Enter location">
+    <input id="disease" type="text" placeholder="Enter disease type">
+    <input id="day" type="date" placeholder="Select meeting day">
+    <button onclick="searchHospitals()">Search</button>
+  </div>
+  <div id="map"></div>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDCmVuM83ZYXZK-4tFdKQ1M4w-h5nAX5-A&libraries=places&callback=initMap" async defer></script>
+  <script src="script.js"></script>
+</body>
+</html>
